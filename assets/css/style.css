@@ -15,7 +15,7 @@ body {
     padding-left: 10px;
     margin-left: 10px;
     line-height: 18px;
-    color: teal;
+    color: whitesmoke;
     text-decoration: none;
   }
   
@@ -28,10 +28,16 @@ a:hover {
 }
 
 .custom-toggler.navbar-toggler {
-    border-color: #aa4a4f;
+    border-color: whitesmoke;
 }
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128,0,0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+/* .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245,245,245, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} */
+
+.modal-body,
+.modal-title {
+  color: black;
+  text-align: left;
 }
 
 #masthead {
@@ -40,9 +46,8 @@ a:hover {
   width: 100%;
   margin: 0 0 30px;
   overflow: auto;
-  color: #C8C8C8;
-  background-color: #C8C8C8;
-  border-bottom: 2px solid rgb(204, 184, 184);
+  color: linear-gradient(to left, #000000 0%, #DAA520 100%);
+  background: linear-gradient(to left, #000000 0%, #DAA520 100%);  border-bottom: 2px solid linear-gradient(to left, #000000 0%, #DAA520 100%);
 }
 
 #logo {
@@ -53,15 +58,15 @@ a:hover {
     font-size: 30px;
     font-weight: 700;
     line-height: 55px;
-    color: #fff;
+    color: whitesmoke;
     text-align: center;
     text-decoration: none;
-    background: #aa4a4f;
+    background: #000000;
   }
 
 #logo:hover,
   input[type=submit]:hover {
-    background: teal;
+    background: linear-gradient(to left, #DAA520 0%, #000000 100%);
   }
 
 .social:hover {
@@ -69,22 +74,78 @@ a:hover {
     opacity: 0.8;
   }
 
-h1 
-h3 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.btn {
+  background: linear-gradient(to left, #DAA520 0%, #000000 100%);
+  color: whitesmoke;
+  padding: 10px;
+}
+
+.profile {
+  width:128px;
+    margin: 10px;
+    border:10px solid linear-gradient(to left, #FFD700 0%, #000000 100%);
+    border-radius: 500px;
+    color: whitesmoke;
+}
+
+.picEdit {
+  height: 250px;
+  width: 200px;
+  padding:1px;
+  border:1px solid #0000;
+  background-color:#FFD700;
+}
+
+.padRow {
+  margin-bottom: 20px;
+}
+
+.cardImage {
+  width: 250px;
+  height: 250px;
 }
 
 #intro {  
+  justify-content: space-between;
   height: 1000px;
   text-align: center; 
   padding-top: 250px;
   font-family: 'Courier New', Courier, monospace;
-  font-weight: 900;
-  color: #ED7839;
+  color:black;
 }
-  /* #masthead
-  #about
-  #portfolio
-  #edu
+
+#about {
+  padding-top: 200px;
+  height: 1000px;
+  background: url(../images/Studebaker_Firestone.jpg);
+  background-size: 1440px;
+  /* background-repeat: no-repeat; */
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#portfolio {
+  height: 1000px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+  text-align: center;
+}
+
+#edu {
+  height: 1000px;
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 150px;
+}
+
+#contact {
+  height: 1000px;
+  
+}
+  /*
   #tech
   #contact */
