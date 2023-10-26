@@ -1,34 +1,61 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
 
-body {
-    background: url("../images/hip-square.png");
-    font-size: 18px;
-    line-height: 34px;
-    color: #777;
-    font-family: 'Open Sans', sans-serif;
+A:link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+A:visited {
+  text-decoration: none;
+  color: whitesmoke;
+}
+A:hover {
+  text-decoration: none;
+  color: #daa520;
+}
+A:active {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
-.navbar-default {padding: 0;}
+body {
+  background: url('../images/hip-square.png');
+  font-size: 18px;
+  line-height: 34px;
+  color: #777;
+  font-family: 'Finlandica', sans-serif;
+}
+
+footer {
+  background: linear-gradient(to left, #000000 0%, #daa520 100%);
+  text-align: center;
+  color: whitesmoke;
+  justify-content: center;
+  font-family: 'Finlandica', sans-serif;
+}
+
+.navbar-default {
+  padding: 0;
+}
 
 .custNav {
-    display: inline-block;
-    padding-left: 10px;
-    margin-left: 10px;
-    line-height: 18px;
-    color: whitesmoke;
-    text-decoration: none;
-  }
-  
+  display: inline-block;
+  padding-left: 10px;
+  margin-left: 10px;
+  line-height: 18px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
 .custNavFirst {
-    border-left: 0 none;
-  }
-  
-a:hover { 
-    text-decoration: none; 
+  border-left: 0 none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .custom-toggler.navbar-toggler {
-    border-color: whitesmoke;
+  border-color: whitesmoke;
 }
 /* .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245,245,245, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -46,54 +73,73 @@ a:hover {
   width: 100%;
   margin: 0 0 30px;
   overflow: auto;
-  color: linear-gradient(to left, #000000 0%, #DAA520 100%);
-  background: linear-gradient(to left, #000000 0%, #DAA520 100%);  border-bottom: 2px solid linear-gradient(to left, #000000 0%, #DAA520 100%);
+  color: linear-gradient(to left, #000000 0%, #daa520 100%);
+  background: linear-gradient(to left, #000000 0%, #daa520 100%);
+  border-bottom: 2px solid linear-gradient(to left, #000000 0%, #daa520 100%);
 }
 
 #logo {
-    float: left;
-    width: 250px;
-    height: 65px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 55px;
-    color: whitesmoke;
-    text-align: center;
-    text-decoration: none;
-    background: #000000;
-  }
-
-#logo:hover,
-  input[type=submit]:hover {
-    background: linear-gradient(to left, #DAA520 0%, #000000 100%);
-  }
-
-.social:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-
-.btn {
-  background: linear-gradient(to left, #DAA520 0%, #000000 100%);
+  float: left;
+  width: 250px;
+  height: 65px;
+  font-family: 'Finlandica', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 55px;
   color: whitesmoke;
-  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  background: #000000;
 }
 
+#logo:hover,
+input[type='submit']:hover {
+  background: linear-gradient(to left, #daa520 0%, #000000 100%);
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-doyer {
+  background-color: #daa520;
+  box-shadow: 0 4px 8px 0 dodgerblue, 0 6px 20px 0 dodgerblue;
+  color: whitesmoke;
+  padding: 10px;
+
+  &:hover {
+    background-color: #000000;
+    border: 2px solid #daa520;
+    color: #daa520;
+  }
+}
+
+/* {
+  border-color: daa520;
+  color: #000000;
+  box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 $blue;
+  transition: all 150ms ease-in-out;
+  
+  &:hover {
+    box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px $blue;
+  }
+} */
+
 .profile {
-  width:128px;
-    margin: 10px;
-    border:10px solid linear-gradient(to left, #FFD700 0%, #000000 100%);
-    border-radius: 500px;
-    color: whitesmoke;
+  width: 128px;
+  margin: 10px;
+  border: 10px solid linear-gradient(to left, #ffd700 0%, #000000 100%);
+  border-radius: 500px;
+  color: whitesmoke;
 }
 
 .picEdit {
   height: 250px;
   width: 200px;
-  padding:1px;
-  border:1px solid #0000;
-  background-color:#FFD700;
+  padding: 1px;
+  border: 1px solid #0000;
+  background-color: #ffd700;
 }
 
 .padRow {
@@ -101,17 +147,17 @@ a:hover {
 }
 
 .cardImage {
-  width: 250px;
+  width: 300px;
   height: 250px;
 }
 
-#intro {  
+#intro {
   justify-content: space-between;
   height: 1000px;
-  text-align: center; 
+  text-align: center;
   padding-top: 250px;
-  font-family: 'Courier New', Courier, monospace;
-  color:black;
+  font-family: 'Finlandica', sans-serif;
+  color: black;
 }
 
 #about {
@@ -120,7 +166,7 @@ a:hover {
   background: url(../images/Studebaker_Firestone.jpg);
   background-size: 1440px;
   /* background-repeat: no-repeat; */
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Finlandica', sans-serif;
   color: white;
   justify-content: space-between;
   text-align: center;
@@ -128,7 +174,8 @@ a:hover {
 
 #portfolio {
   height: 1000px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Finlandica', sans-serif;
+  text-shadow: 0 0 10px #daa520;
   color: #000000;
   text-align: center;
 }
@@ -136,16 +183,17 @@ a:hover {
 #edu {
   height: 1000px;
   background-color: black;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Finlandica', sans-serif;
   text-align: center;
   color: whitesmoke;
   padding-top: 150px;
 }
 
 #contact {
-  height: 1000px;
-  
+  height: 750px;
+  font-family: 'Finlandica', sans-serif;
+  text-shadow: 0 0 10px #daa520;
+  text-align: center;
+  color: #000000;
+  padding-top: 150px;
 }
-  /*
-  #tech
-  #contact */
